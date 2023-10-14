@@ -1,11 +1,15 @@
 ---
 title: Introduction
-description: A guide in my new Starlight docs site.
+description: An introduction to PromethiumJS.
 ---
 
-Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+## What is PromethiumJS?
 
-## Further reading
+PromethiumJS is a JavaScript UI framework built on top of [Lit](https://lit.dev) that augments it by:
 
-- Read [about how-to guides](https://diataxis.fr/how-to-guides/) in the Diátaxis framework
+- Allowing you to build functional components (components that are made up of just pure functions) with [lit-html](https://lit.dev/docs/libraries/standalone-templates/).
+- Providing a global state management solution.
+- Providing a client-side router.
+- Giving you other useful primitives to make your life easier.
+
+It's as simple as that!

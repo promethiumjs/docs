@@ -9,9 +9,17 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "PromethiumJS",
+      description:
+        "JavaScript UI framework for building anything from simple to complex websites using Lit or Lit-html",
+      logo: {
+        src: "./src/assets/promethiumjs-logo-radioactive-light.png",
+      },
       social: {
         github: "https://github.com/promethiumjs/promethium",
         twitter: "https://twitter.com/promethiumjs",
+      },
+      editLink: {
+        baseUrl: "https://github.com/promethiumjs/docs/edit/main/",
       },
       sidebar: [
         {
@@ -20,19 +28,25 @@ export default defineConfig({
             { label: "Introduction", link: "/getting-started/introduction/" },
             { label: "Installation", link: "/getting-started/installation/" },
             {
-              label: "Project Environment Setup",
-              link: "/getting-started/project-environment-setup/",
+              label: "Editor Setup",
+              link: "/getting-started/editor-setup/",
             },
           ],
         },
         {
           label: "Tutorial",
           items: [
-            { label: "Tic-Tac-Toe", link: "/tutorial/tic-tac-toe/" },
-            { label: "Blog", link: "/tutorial/blog/" },
             {
-              label: "Random Colour Generator",
-              link: "/tutorial/random-colour-generator/",
+              label: "Color Palette Generator",
+              link: "/tutorial/color-palette-generator/",
+            },
+            {
+              label: "Simple Calculator",
+              link: "/tutorial/simple-calculator/",
+            },
+            {
+              label: "Notes Management System",
+              link: "/tutorial/notes-management-system/",
             },
           ],
         },
@@ -40,12 +54,17 @@ export default defineConfig({
           label: "Core Concepts",
           items: [
             {
-              label: "PromethiumJS Components",
-              link: "/core-concepts/promethiumjs-components/",
+              label: "Functional Components",
+              link: "/core-concepts/functional-components/",
             },
-            { label: "State", link: "/core-concepts/state/" },
-            { label: "Memos", link: "/core-concepts/memos/" },
-            { label: "Effects", link: "/core-concepts/effects/" },
+            {
+              label: "Core Adaptations",
+              link: "/core-concepts/core-adaptations",
+            },
+            {
+              label: "Custom Adaptations",
+              link: "/core-concepts/custom-adaptations",
+            },
             {
               label: "Advanced State Management",
               link: "/core-concepts/advanced-state-management/",
@@ -64,16 +83,16 @@ export default defineConfig({
               link: "/guides/ui-component-libraries/",
             },
             {
-              label: "Ardenide",
-              link: "/guides/ardenide/",
+              label: "Integrating With Other Frameworks And Libraries",
+              link: "/guides/integrating-with-other-frameworks-and-libraries",
             },
             {
-              label: "Tailwind",
-              link: "/guides/tailwind/",
+              label: "Using Tailwind",
+              link: "/guides/using-tailwind/",
             },
             {
-              label: "Astro",
-              link: "/guides/astro/",
+              label: "Astro Integration",
+              link: "/guides/astro-integration/",
             },
             {
               label: "PromethiumJS DevTools",
