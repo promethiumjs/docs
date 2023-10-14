@@ -4,12 +4,14 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  outDir: "docs",
+  site: "https://promethiumjs.github.io",
+  base: "/docs",
   integrations: [
     starlight({
       title: "PromethiumJS",
       social: {
         github: "https://github.com/promethiumjs/promethium",
+        twitter: "https://twitter.com/promethiumjs",
       },
       sidebar: [
         {
