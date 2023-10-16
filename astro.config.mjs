@@ -112,6 +112,7 @@ export default defineConfig({
           label: "Reference",
           items: [
             { label: "h", link: "/reference/h/" },
+            { label: "renderComponent", link: "/reference/renderComponent/" },
             { label: "adaptState", link: "/reference/adapt-state/" },
             { label: "adaptEffect", link: "/reference/adapt-effect/" },
             {
