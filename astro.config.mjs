@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://promethiumjs.github.io",
-  base: "/docs",
   integrations: [
     starlight({
       title: "PromethiumJS",
