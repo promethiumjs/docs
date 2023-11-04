@@ -7,7 +7,7 @@ description: Setup you code editor to work with PromethiumJS.
 
 - For [VS Code](https://code.visualstudio.com/), you can use the [`lit-plugin` extension](https://marketplace.visualstudio.com/items?itemName=runem.lit-plugin).
 - For [Vim](https://www.vim.org/), we recommend the [`vim-jsx-pretty` plugin](https://github.com/MaxMEllon/vim-jsx-pretty).
-- For [Neovim](https://neovim.io/), we recommend [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) with the `JavaScript`, `TypeScript` and `jsx` parsers installed.
+- For [Neovim](https://neovim.io/), we recommend [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) with the `JavaScript`, `TypeScript` and `tsx` parsers installed.
 - For syntax highlighting in other code editors, [lit.dev](https://lit.dev) recommends the [`ts-lit-plugin` TypeScript compiler plugin](https://github.com/runem/lit-analyzer/tree/master/packages/ts-lit-plugin).
 
 ## LSP features (eg. Intellisense)

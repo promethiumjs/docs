@@ -4,7 +4,6 @@ description: Some UI component libraries you can use with PromethiumJS.
 ---
 
 UI component libraries have proven quite essential to modern frontend development.
-
 Here are a few libraries we recommend checking out that work pretty well with Lit and PromethiumJS:
 
 - [Shoelace](https://shoelace.style/)

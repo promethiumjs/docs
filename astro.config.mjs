@@ -2,10 +2,13 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
 
+import expressiveCode from "astro-expressive-code";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://promethiumjs.github.io/docs",
   integrations: [
+    expressiveCode(),
     starlight({
       title: "PromethiumJS",
       description:
@@ -24,8 +27,14 @@ export default defineConfig({
         {
           label: "Getting Started",
           items: [
-            { label: "Introduction", link: "/getting-started/introduction/" },
-            { label: "Installation", link: "/getting-started/installation/" },
+            {
+              label: "Introduction",
+              link: "/getting-started/introduction/",
+            },
+            {
+              label: "Installation",
+              link: "/getting-started/installation/",
+            },
             {
               label: "Editor Setup",
               link: "/getting-started/editor-setup/",
@@ -36,16 +45,8 @@ export default defineConfig({
           label: "Tutorial",
           items: [
             {
-              label: "Color Palette Generator",
-              link: "/tutorial/color-palette-generator/",
-            },
-            {
               label: "Simple Calculator",
               link: "/tutorial/simple-calculator/",
-            },
-            {
-              label: "Notes Management System",
-              link: "/tutorial/notes-management-system/",
             },
           ],
         },
@@ -82,6 +83,10 @@ export default defineConfig({
               link: "/guides/ui-component-libraries/",
             },
             {
+              label: "Styling Solutions",
+              link: "/guides/styling-solutions/",
+            },
+            {
               label: "Integrating With Other Frameworks And Libraries",
               link: "/guides/integrating-with-other-frameworks-and-libraries",
             },
@@ -108,24 +113,62 @@ export default defineConfig({
           ],
         },
         {
+          label: "Examples",
+
+          items: [
+            {
+              label: "Color Palette Generator",
+              link: "/examples/color-palette-generator/",
+            },
+            {
+              label: "Notes Management System",
+              link: "/examples/notes-management-system/",
+            },
+          ],
+        },
+        {
           label: "Reference",
           items: [
-            { label: "h", link: "/reference/h/" },
-            { label: "renderComponent", link: "/reference/renderComponent/" },
-            { label: "adaptState", link: "/reference/adapt-state/" },
-            { label: "adaptEffect", link: "/reference/adapt-effect/" },
+            {
+              label: "h",
+              link: "/reference/h/",
+            },
+            {
+              label: "renderComponent",
+              link: "/reference/render-component/",
+            },
+            {
+              label: "adaptState",
+              link: "/reference/adapt-state/",
+            },
+            {
+              label: "adaptEffect",
+              link: "/reference/adapt-effect/",
+            },
             {
               label: "adaptRenderEffect",
               link: "/reference/adapt-render-effect/",
             },
-            { label: "adaptSyncEffect", link: "/reference/adapt-sync-effect/" },
-            { label: "ParticleEntity", link: "/reference/particle-entity/" },
+            {
+              label: "adaptSyncEffect",
+              link: "/reference/adapt-sync-effect/",
+            },
+            {
+              label: "ParticleEntity",
+              link: "/reference/particle-entity/",
+            },
             {
               label: "DerivativeEntity",
               link: "/reference/derivative-entity/",
             },
-            { label: "ActionEntity", link: "/reference/action-entity/" },
-            { label: "Router", link: "/reference/router/" },
+            {
+              label: "ActionEntity",
+              link: "/reference/action-entity/",
+            },
+            {
+              label: "Router",
+              link: "/reference/router/",
+            },
             {
               label: "TypeScript Utility Types",
               link: "/reference/typescript-utility-types/",
@@ -135,6 +178,8 @@ export default defineConfig({
       ],
       customCss: ["./src/tailwind.css"],
     }),
-    tailwind({ applyBaseStyles: false }),
+    tailwind({
+      applyBaseStyles: false,
+    }),
   ],
 });
