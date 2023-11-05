@@ -1,5 +1,5 @@
 ---
-title: Simple Calculator 
+title: Simple Calculator
 description: In this tutorial, we're going to build a simple calculator with PromethiumJS.
 ---
 
@@ -8,7 +8,7 @@ description: In this tutorial, we're going to build a simple calculator with Pro
 In this tutorial, you'll build a simple calculator with all the basic arithmetic operations.
 The picture below depicts what your calculator app should look like once you're done:
 
-![Simple calculator tutorial result](/src/assets/simple-calculator-tutorial-preview.png)
+![Simple calculator tutorial result](../../../assets/simple-calculator-tutorial-preview.png)
 
 Check out the preview [here](https://promethiumjs.github.io/simple-calculator-tutorial/) and view the full code [here](https://github.com/promethiumjs/simple-calculator-tutorial).
 
@@ -30,7 +30,7 @@ Proceed to the `App.js` file in the `src` folder of your project directory and r
 import { html } from "lit";
 
 function App() {
-  return () => html`<div>Simple Calculator</div>`; 
+  return () => html`<div>Simple Calculator</div>`;
 }
 
 export default App;
@@ -98,7 +98,7 @@ It's time to add styles and interactivity to our application. Let's begin with o
 import { html } from "lit";
 
 function Button() {
-  return () => html`<button>X</button>`; 
+  return () => html`<button>X</button>`;
 }
 
 export default Button;
@@ -137,7 +137,7 @@ At this point, every button in our application displays "X" instead of their app
 import { html } from "lit";
 
 function Button(props) {
-  return () => html`<button>${props.symbol}</button>`; 
+  return () => html`<button>${props.symbol}</button>`;
 }
 
 export default Button;
@@ -156,24 +156,34 @@ function App() {
       <div>Screen</div>
       <div>
         <div>
-          ${h(Button, { symbol: "(" })} ${h(Button, { symbol: ")" })}
-          ${h(Button, { symbol: "%" })} ${h(Button, { symbol: "CE" })}
+          ${h(Button, { symbol: "(" })} ${h(Button, { symbol: ")" })} ${h(
+            Button,
+            { symbol: "%" },
+          )} ${h(Button, { symbol: "CE" })}
         </div>
         <div>
-          ${h(Button, { symbol: "7" })} ${h(Button, { symbol: "8" })}
-          ${h(Button, { symbol: "9" })} ${h(Button, { symbol: "÷" })}
+          ${h(Button, { symbol: "7" })} ${h(Button, { symbol: "8" })} ${h(
+            Button,
+            { symbol: "9" },
+          )} ${h(Button, { symbol: "÷" })}
         </div>
         <div>
-          ${h(Button, { symbol: "4" })} ${h(Button, { symbol: "5" })}
-          ${h(Button, { symbol: "6" })} ${h(Button, { symbol: "×" })}
+          ${h(Button, { symbol: "4" })} ${h(Button, { symbol: "5" })} ${h(
+            Button,
+            { symbol: "6" },
+          )} ${h(Button, { symbol: "×" })}
         </div>
         <div>
-          ${h(Button, { symbol: "1" })} ${h(Button, { symbol: "2" })}
-          ${h(Button, { symbol: "3" })} ${h(Button, { symbol: "-" })}
+          ${h(Button, { symbol: "1" })} ${h(Button, { symbol: "2" })} ${h(
+            Button,
+            { symbol: "3" },
+          )} ${h(Button, { symbol: "-" })}
         </div>
         <div>
-          ${h(Button, { symbol: "." })} ${h(Button, { symbol: "0" })}
-          ${h(Button, { symbol: "+" })} ${h(Button, { symbol: "=" })}
+          ${h(Button, { symbol: "." })} ${h(Button, { symbol: "0" })} ${h(
+            Button,
+            { symbol: "+" },
+          )} ${h(Button, { symbol: "=" })}
         </div>
       </div>
     </div>
@@ -181,7 +191,6 @@ function App() {
 }
 
 export default App;
-
 ```
 
 ## Adding styles
@@ -221,24 +230,34 @@ function App() {
       <div style=${styleMap(screenStyles)}>Screens</div>
       <div>
         <div>
-          ${h(Button, { symbol: "(" })} ${h(Button, { symbol: ")" })}
-          ${h(Button, { symbol: "%" })} ${h(Button, { symbol: "CE" })}
+          ${h(Button, { symbol: "(" })} ${h(Button, { symbol: ")" })} ${h(
+            Button,
+            { symbol: "%" },
+          )} ${h(Button, { symbol: "CE" })}
         </div>
         <div>
-          ${h(Button, { symbol: "7" })} ${h(Button, { symbol: "8" })}
-          ${h(Button, { symbol: "9" })} ${h(Button, { symbol: "÷" })}
+          ${h(Button, { symbol: "7" })} ${h(Button, { symbol: "8" })} ${h(
+            Button,
+            { symbol: "9" },
+          )} ${h(Button, { symbol: "÷" })}
         </div>
         <div>
-          ${h(Button, { symbol: "4" })} ${h(Button, { symbol: "5" })}
-          ${h(Button, { symbol: "6" })} ${h(Button, { symbol: "×" })}
+          ${h(Button, { symbol: "4" })} ${h(Button, { symbol: "5" })} ${h(
+            Button,
+            { symbol: "6" },
+          )} ${h(Button, { symbol: "×" })}
         </div>
         <div>
-          ${h(Button, { symbol: "1" })} ${h(Button, { symbol: "2" })}
-          ${h(Button, { symbol: "3" })} ${h(Button, { symbol: "-" })}
+          ${h(Button, { symbol: "1" })} ${h(Button, { symbol: "2" })} ${h(
+            Button,
+            { symbol: "3" },
+          )} ${h(Button, { symbol: "-" })}
         </div>
         <div>
-          ${h(Button, { symbol: "." })} ${h(Button, { symbol: "0" })}
-          ${h(Button, { symbol: "+" })} ${h(Button, { symbol: "=" })}
+          ${h(Button, { symbol: "." })} ${h(Button, { symbol: "0" })} ${h(
+            Button,
+            { symbol: "+" },
+          )} ${h(Button, { symbol: "=" })}
         </div>
       </div>
     </div>
@@ -313,24 +332,34 @@ function App() {
       <div style=${styleMap(screenStyles)}>${calculatorOutput()}</div>
       <div>
         <div>
-          ${h(Button, { symbol: "(" })} ${h(Button, { symbol: ")" })}
-          ${h(Button, { symbol: "%" })} ${h(Button, { symbol: "CE" })}
+          ${h(Button, { symbol: "(" })} ${h(Button, { symbol: ")" })} ${h(
+            Button,
+            { symbol: "%" },
+          )} ${h(Button, { symbol: "CE" })}
         </div>
         <div>
-          ${h(Button, { symbol: "7" })} ${h(Button, { symbol: "8" })}
-          ${h(Button, { symbol: "9" })} ${h(Button, { symbol: "÷" })}
+          ${h(Button, { symbol: "7" })} ${h(Button, { symbol: "8" })} ${h(
+            Button,
+            { symbol: "9" },
+          )} ${h(Button, { symbol: "÷" })}
         </div>
         <div>
-          ${h(Button, { symbol: "4" })} ${h(Button, { symbol: "5" })}
-          ${h(Button, { symbol: "6" })} ${h(Button, { symbol: "×" })}
+          ${h(Button, { symbol: "4" })} ${h(Button, { symbol: "5" })} ${h(
+            Button,
+            { symbol: "6" },
+          )} ${h(Button, { symbol: "×" })}
         </div>
         <div>
-          ${h(Button, { symbol: "1" })} ${h(Button, { symbol: "2" })}
-          ${h(Button, { symbol: "3" })} ${h(Button, { symbol: "-" })}
+          ${h(Button, { symbol: "1" })} ${h(Button, { symbol: "2" })} ${h(
+            Button,
+            { symbol: "3" },
+          )} ${h(Button, { symbol: "-" })}
         </div>
         <div>
-          ${h(Button, { symbol: "." })} ${h(Button, { symbol: "0" })}
-          ${h(Button, { symbol: "+" })} ${h(Button, { symbol: "=" })}
+          ${h(Button, { symbol: "." })} ${h(Button, { symbol: "0" })} ${h(
+            Button,
+            { symbol: "+" },
+          )} ${h(Button, { symbol: "=" })}
         </div>
       </div>
     </div>
